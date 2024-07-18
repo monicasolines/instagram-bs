@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Instagram</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-light bg-light">
+            <i class="fa-brands fa-instagram fa-lg"> Instagram</i>
+            <!-- modal trigger button -->
+            <button type="button" class="btn btn-success ms-auto me-3" data-bs-toggle="modal"
+                data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Create a new post</button>
+
+            <!-- dropdown -->
+            <div class="btn-group me-5">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="fa-solid fa-gear"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                    <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item text-danger" href="#">Log Out</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+                <!-- modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label"><strong> Caption: </strong></label>
+                                    <textarea class="form-control" id="message-text"
+                                        placeholder="Add the caption of your post here"></textarea>
+                                </div>
+                                <button class="btn btn-light border border-dark-mute">
+                                    <i class="fa-solid fa-camera"></i>
+                                </button>
+                                <button class="btn btn-light border border-dark-mute">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-success">Publish</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+    <!-- nav-tabs -->
+    <div class="container-fluid">
+        <ul class="nav nav-tabs nav justify-content-center m-1" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                    type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i
+                        class="fa-solid fa-table-cells"></i></button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                    type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i
+                        class="fa-solid fa-square"></i></button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                tabindex="0">
+                <div class="row">
+                    <div class="col-4 p-1">
+                        <img src="img/450_1000.jpeg" class="img-fluid fixed-size-img"
+                            style="height: 30vw; object-fit: cover;">
+                    </div>
+                    <div class="col-4 p-1">
+                        <img src="img/eifel.jpg" class="img-fluid fixed-size-img" style="height: 30vw; object-fit: cover;">
+                    </div>
+                    <div class="col-4 p-1">
+                        <img src="img/family.jpg" class="img-fluid fixed-size-img" style="height: 30vw; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 p-1">
+                        <img src="img/friends.jpg" class="img-fluid fixed-size-img"
+                            style="height: 30vw; object-fit: cover;">
+                    </div>
+                    <div class="col-4 p-1">
+                        <img src="img/futbol.jpg" class="img-fluid fixed-size-img" style="height: 30vw; object-fit: cover;">
+                    </div>
+                    <div class="col-4 p-1">
+                        <img src="img/famil.jpg" class="img-fluid fixed-size-img" style="height: 30vw; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 p-1">
+                        <img src="img/perro2.jpg" class="img-fluid fixed-size-img" style="height: 30vw; object-fit: cover;">
+                    </div>
+                    <div class="col-4 p-1">
+                        <img src="img/playa.jpg" class="img-fluid fixed-size-img" style="height: 30vw; object-fit: cover;">
+                    </div>
+                    <div class="col-4 p-1">
+                        <img src="img/smile.jpg" class="img-fluid fixed-size-img" style="height: 30vw; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <!-- card1 -->
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <div class="card mb-3 mt-3" id="card1" style="width: 25rem;">
+                        <div class="card-head d-flex justify-content-between">
+                            <p class="mt-2 p-0 mb-1 ms-1"><strong> Programming </strong></p>
+                            <p class="me-1"><small> 02/16 </small></p>
+                        </div>
+                        <img src="img/450_1000.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body p-2">
+                            <h6 class="card-title mt-1"> 90300 Likes </h6>
+                            <p class="card-text"> I always try to remember how much I love programming when I encounter a bug
+                                jaja.</p>
+                        </div>
+                    </div>
+                    <!-- card2 -->
+                    <div class="card mb-3" id="card2" style="width: 25rem;">
+                        <div class="card-head d-flex justify-content-between">
+                            <p class="mt-2 p-0 mb-1 ms-1"><strong> In Paris!!! </strong></p>
+                            <p class="me-1"><small> 03/18 </small></p>
+                        </div>
+                        <img src="img/eifel.jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-2">
+                            <h6 class="card-title mt-1"> 10300 Likes </h6>
+                            <p class="card-text">I loved Paris, especially de Eifel tower!</p>
+                        </div>
+                    </div>
+                    <!-- card3 -->
+                    <div class="card mb-3" id="card3" style="width: 25rem;">
+                        <div class="card-head d-flex justify-content-between">
+                            <p class="mt-2 p-0 mb-1 ms-1"><strong> Family >3 </strong></p>
+                            <p class="me-1"><small> 05/10 </small></p>
+                        </div>
+                        <img src="img/family.jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-2">
+                            <h6 class="card-title mt-1"> 1100 Likes </h6>
+                            <p class="card-text"> Being around family is great.</p>
+                        </div>
+                    </div>
+                    <!-- card4 -->
+                    <div class="card mb-3" id="card4" style="width: 25rem;">
+                        <div class="card-head d-flex justify-content-between">
+                            <p class="mt-2 p-0 mb-1 ms-1"><strong> Best Friends </strong></p>
+                            <p class="me-1"><small> 06/22 </small></p>
+                        </div>
+                        <img src="img/friends.jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-2">
+                            <h6 class="card-title mt-1"> 80230 Likes </h6>
+                            <p class="card-text"> Nice friday with my closest friend!</p>
+                        </div>
+                    </div>
+                    <!-- card5 -->
+                    <div class="card mb-3" id="card5" style="width: 25rem;">
+                        <div class="card-head d-flex justify-content-between">
+                            <p class="mt-2 p-0 mb-1 ms-1"><strong> Futbol Weekend! </strong></p>
+                            <p class="me-1"><small> 07/26 </small></p>
+                        </div>
+                        <img src="img/futbol.jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-2">
+                            <h6 class="card-title mt-1"> 900450 Likes </h6>
+                            <p class="card-text"> A weekend full of watching and playing futbol!</p>
+                        </div>
+                    </div>
+                    <!-- card6 -->
+                    <div class="card mb-3" id="card6" style="width: 25rem;">
+                        <div class="card-head d-flex justify-content-between">
+                            <p class="mt-2 p-0 mb-1 ms-1"><strong> Fun day out </strong></p>
+                            <p class="me-1"><small> 08/29 </small></p>
+                        </div>
+                        <img src="img/people.jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-2">
+                            <h6 class="card-title mt-1"> 20 Likes </h6>
+                            <p class="card-text"> I love meeting new people</p>
+                        </div>
+                    </div>
+                    <!-- card7 -->
+                    <div class="card mb-3" id="card7" style="width: 25rem;">
+                        <div class="card-head d-flex justify-content-between">
+                            <p class="mt-2 p-0 mb-1 ms-1"><strong> Crazy cute pic of dogs! </strong></p>
+                            <p class="me-1"><small> 08/26 </small></p>
+                        </div>
+                        <img src="img/perro2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-2">
+                            <h6 class="card-title mt-1"> 100300 Likes </h6>
+                            <p class="card-text">This is a photo of a very cute dogs.</p>
+                        </div>
+                    </div>
+                    <!-- card8 -->
+                    <div class="card mb-3" id="card8" style="width: 25rem;">
+                        <div class="card-head d-flex justify-content-between">
+                            <p class="mt-2 p-0 mb-1 ms-1"><strong> Beach day!!! </strong></p>
+                            <p class="me-1"><small> 09/17 </small></p>
+                        </div>
+                        <img src="img/playa.jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-2">
+                            <h6 class="card-title mt-1"> 300 Likes </h6>
+                            <p class="card-text"> Love this weather cause it means its beach day everyday!</p>
+                        </div>
+                    </div>
+                    <!-- card9 -->
+                    <div class="card mb-3" id="card9" style="width: 25rem;">
+                        <div class="card-head d-flex justify-content-between">
+                            <p class="mt-2 p-0 mb-1 ms-1"><strong> Happy </strong></p>
+                            <p class="me-1"><small> 08/26 </small></p>
+                        </div>
+                        <img src="img/smile.jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-2">
+                            <h6 class="card-title mt-1"> 1700 Likes </h6>
+                            <p class="card-text"> Just happy cause I can. Remember to find happiness even in the little
+                                things, cause that's what actually matters.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
